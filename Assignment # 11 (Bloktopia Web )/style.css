@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #000;
+}
+
+.logo {
+  width: 10px;
+  height: auto;
+  margin-right: -30px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin-inline-start: 500px;
+  margin-top: -15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f0f;
+}
+
+.wallet-btn {
+  background-color: #EC00BF ;
+  color: white;
+  padding: 13px 32px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: -10px;
+  letter-spacing: 1px;
+  margin-right: -25px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 50px;
+  flex-wrap: wrap;
+}
+
+.left {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 500px;
+  height: -65px;
+  border-radius: 15px;
+  margin-top: -115px;
+  margin-left: 55px;
+  border: 2px solid #353535;
+}
+ .dot-wrapper {
+  display: flex;
+  gap: 10px;
+  padding: 8px 25px;
+  border: 2px solid #222;
+  border-radius: 100px;
+  background-color: #000;
+  margin-left: 720px;
+  margin-right: 540px;
+  margin-top: 80px;
+}
+.dot {
+  width: 50px;
+  margin-left: -8px;
+  margin-right: 8px;
+  padding: 10px 10px;
+  border-radius: 50%;
+  border: 2px solid #EC00BF;
+  background-color: transparent;
+}
+
+.dot.active {
+  background-color: #EC00BF;
+}
+
+.right {
+  flex: 1;
+  padding: 20px;
+}
+
+.right h1 {
+  font-size: 78px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-top: -25px;
+}
+
+.right h1 p {
+  color: #EC00BF;
+   font-size: 80px;
+  font-weight: bold;
+  line-height: 0.0;
+  margin-top: 25px;
+} 
+
+.right p {
+  margin: 20px 0;
+  font-size: 18px;
+  color: #ccc;
+  font-weight: 500;
+  margin-top: 40px;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 80px;
+  border: 1px solid #EC00Bf;
+  border-radius: 10px;
+  color: #EC00Bf;
+  text-decoration: none;
+  font-weight: 1 ;
+  transition: 0.3s;
+  background-color: #262626;
+  margin-top: 25px;
+}
+
+.download-btn:hover {
+  background-color: #EC00Bf;
+  color: white;
+}
+ .main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  gap: 40px;
+}
+
+.left-image img {
+  height: 450px;
+  object-fit: contain;
+margin-top: -100px;
+margin-left: 50px;
+}
+
+.right-image img {
+  height: 300px;
+  object-fit: contain;
+  width: 850px;
+  margin-right: -300px;
+  padding: -800px 0px;
+}
+
+.text-section {
+  max-width: 400px;
+  text-align: center;
+}
+
+.text-section h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  margin-right: -250px;
+}
+
+.text-section p {
+  font-size: 16px;
+  line-height: 1.7;
+  /* font-weight: bold; */
+    margin-right: -150px;
+    margin-left: 100px;
+}
+
+ .cards-grid {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.card {
+  position: relative;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.card .content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 80%;
+}
+
+.icon-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.icon-title .icon {
+  font-size: 32px;
+}
+
+.icon-title h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.card .btn {
+  display: inline-block;
+  padding: 10px 25px;
+  border: 2px solid #EC00Bf;
+  color: #EC00Bf;
+  background-color: transparent;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: #EC00Bf;
+  color: #000;
+}
+footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px;
+  font-size: 14px;
+  margin-bottom: -20px;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: -1px;
+}
+
+.footer-container .social-icons {
+  margin-bottom: 20px;
+}
+
+.footer-container .social-icons a {
+  color: #fff;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-container .social-icons a:hover {
+  color: #EC00Bf;
+}
+
+.footer-container .copyright {
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:bold ;
+}
+
+.footer-container .footer-links {
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
+.footer-container .footer-links a {
+  color: #EC00Bf;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-container .footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-container .disclaimer {
+  margin: 10px 0;
+  color: #aaa;
+  font-size: 13px;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+.footer-container .owner {
+  margin-top: 20px;
+  color: #aaa;
+  font-size: 13px;
+  font-weight: bold;
+}
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  color: #ccc;
+}

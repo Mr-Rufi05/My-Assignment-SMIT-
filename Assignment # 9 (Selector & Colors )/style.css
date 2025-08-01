@@ -1,0 +1,43 @@
+ Universal Selector 
+* {
+    font-family: Arial, sans-serif;
+}
+
+ Element Selector
+h1 {
+    color: darkblue;
+    background-color: lightblue;
+    text-align: center;
+}
+
+p {
+    color: #333333;
+}
+
+ Class Selector 
+.highlight {
+    background-color: yellow;
+    color: red;
+}
+
+ ID Selector 
+#main-box {
+    background-color: #f0f0f0;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+ Group Selector 
+h2, h3 {
+    color: green;
+}
+
+ Descendant Selector 
+div p {
+    color: rgb(100, 100, 255);
+}
+
+ Hover pseudo-class 
+a:hover {
+    color: orange;
+}
