@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #ffffff, #f0f0f8);
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: white;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.product-img {
+  width: 220px;
+  margin-top: 20px;
+  animation: zoomIn 1.2s ease forwards;
+}
+
+.features {
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  font-weight: 500;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  background: #eaeaea;
+}
+
+.pricing {
+  background: #ffcd00;
+  padding: 40px 20px;
+}
+
+.pricing h2 {
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+}
+
+.buy-btn {
+  background: #1f1c2c;
+  color: white;
+  padding: 14px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.buy-btn:hover {
+  background: #333;
+}
+
+.footer {
+  background: #1f1c2c;
+  color: white;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #ffcd00;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes zoomIn {
+  from {transform: scale(0.8); opacity: 0;}
+  to {transform: scale(1); opacity: 1;}
+}
+
+.pulse {
+  animation: pulseAnim 2s infinite;
+}
+
+@keyframes pulseAnim {
+  0% {box-shadow: 0 0 0 0 rgba(255, 205, 0, 0.6);}
+  70% {box-shadow: 0 0 0 20px rgba(255, 205, 0, 0);}
+  100% {box-shadow: 0 0 0 0 rgba(255, 205, 0, 0);}
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 3!</title>
+</head>
+<body>
+    <div>
+    <center></center><button style="background-color: lightgreen;">Step 1: Account</button>
+    <button style="background-color: lightgreen;">Step 2: Personal Details</button>
+    <button style="background-color: #4A90E2; color: white;">Step 3: Your Review</button></center>
+  </div>
+
+  <fieldset>
+    <legend><strong>Your Review:</strong></legend>
+
+    <form action="/submit" method="get">
+      <label for="source">How did you hear about us?</label>
+      <select id="source" name="source">
+        <option>Select your option</option>
+        <option>Facebook</option>
+        <option>Instagram</option>
+        <option>Friend</option>
+        <option>Other</option>
+      </select><br><br>
+
+      <label>Would you visit again?</label><br>
+      <input type="radio" id="yes" name="visit" value="yes">
+      <label for="yes">Yes</label>
+      <input type="radio" id="no" name="visit" value="no">
+      <label for="no">No</label>
+      <input type="radio" id="maybe" name="visit" value="maybe">
+      <label for="maybe">Maybe</label><br><br>
+
+      <label for="comments">Comments:</label><br>
+      <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Enter your comments here..."></textarea><br><br>
+
+      <label for="file">Documents:</label><br>
+      <input type="file" id="file" name="file"><br><br>
+
+      <input type="checkbox" id="updates" name="updates" checked>
+      <label for="updates">Sign me up for email updates</label><br><br>
+    </form>
+    <a href="./Step2.html"><img src="./Assests/back.png" alt="Back" width="100"></a>
+    <a href="/submit"><img src="./Assests/submit.png" alt="Next" width="100"></a>
+      </fieldset>
+
+      
+
+</body>
+</html>
